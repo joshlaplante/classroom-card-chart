@@ -14,6 +14,8 @@ class GUIWindow():
         master.resizable(False,False)
         #color window
         master.configure(background = "azure")
+        #save master variable
+        self.master = master
 
         #setup card images
         self.orgGreenImage = Image.open('card_green.png')
@@ -66,7 +68,7 @@ class GUIWindow():
 
     #setup exit item
     def exitGUI(self):
-        self.destroy()
+        self.master.destroy()
 
     #setup card space refresh
     def refreshCardSpace(self):
@@ -245,6 +247,7 @@ def main():
     window = GUIWindow(root)
     window.fillWindow()
     root.mainloop()
+
 
 if __name__ == "__main__": main()
 
