@@ -1,4 +1,4 @@
-### Student Card Chart GUI
+### Classroom Card Chart GUI
 ***
 This Python 3.4 application is designed to assist elementary schoolteachers in monitoring and rewarding the behavior of their students over time and to replace hanging card charts already in existence. It utilizes a SQLite database connection to manage student information.
 
